@@ -6,7 +6,7 @@ import fetchApiData from './modules/api.mjs'
 
 const apiData = await fetchApiData();
 console.log(apiData.results);
-
+console.log("hello");
 // async function main() {
 //     try {
 //       const apiData = await fetchApiData();
