@@ -1,4 +1,12 @@
 /* CSS Reset */
+:root {
+  --primary-color: #7ba05b;
+  --secondary-color: #3f5e5a;
+  --background-color: #353831;
+  --text-color-w: #fff;
+  --text-color-b: #000000;
+  --btn-color: #7ba05b;
+}
 
 html {
   font-size: 16px;
@@ -87,9 +95,27 @@ select {
 }
 /* CSS Reset End */
 
+.navbar {
+  background-color: var(--background-color);
+
+  & .nav-item a {
+    color: var(--text-color-w);
+  }
+  & a:hover {
+    color: var(--primary-color);
+  }
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7ba05b;
+}
+
 .hero-image {
   height: 75vh;
-  background-image: url("../images/office-hero-modified.jpeg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/office-hero-modified.jpeg");
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -99,14 +125,64 @@ select {
   padding-top: 150px;
 
   & h1 {
-    color: #7ba05b;
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 6rem;
   }
 
   & p {
-    color: #fff;
+    color: var(--text-color-w);
     font-size: 2rem;
+  }
+}
+
+#cards-wraper {
+  padding-top: 50px;
+}
+
+.card-body {
+  background-color: var(--secondary-color);
+
+  & .h5-pretext {
+    color: var(--primary-color);
+  }
+
+  & h5 {
+    color: var(--text-color-w);
+  }
+}
+
+.card-icons {
+  padding: 15px 0px 15px 0px;
+
+  & ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & li {
+    margin: 0;
+    padding: 0;
+  }
+
+  & i {
+    font-size: 2rem;
+  }
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: var(--primary-color);
+      opacity: 0.7;
+    }
   }
 }
 

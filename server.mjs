@@ -30,18 +30,18 @@ app.get('/', (req, res) => {
 });
 
 // Create a route to handle API requests
-app.get('/api/data', async(req, res) => {
-    try {
-        // Make a GET request to the API URL
-        const response = await fetch(process.env.API_URI);
-        const apiData = await response.json();
+app.get('/api/data', async (req, res) => {
+  try {
+    // Make a GET request to the API URL
+    const response = await fetch(process.env.API_URI);
+    const apiData = await response.json();
 
-        res.json(apiData);
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'An error occurred while fetching data from the API.' });
-    }
-  });
+    res.json(apiData);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'An error occurred while fetching data from the API.' });
+  }
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
