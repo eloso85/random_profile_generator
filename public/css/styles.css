@@ -1,4 +1,3 @@
-/* CSS Reset */
 :root {
   --primary-color: #7ba05b;
   --secondary-color: #3f5e5a;
@@ -18,6 +17,8 @@ html {
     font-size: 1rem;
   }
 }
+
+/* CSS Reset */
 
 /* Box sizing rules */
 *,
@@ -122,7 +123,7 @@ select {
 }
 
 .hero-text-wrapper {
-  padding-top: 150px;
+  padding-top: 110px;
 
   & h1 {
     color: var(--primary-color);
@@ -185,15 +186,37 @@ select {
     }
   }
 }
-
+/* mobile  */
 @media screen and (max-width: 786px) {
   .hero-image {
     height: 50vh;
   }
 
   .hero-text-wrapper {
-    padding-top: 75px;
+    padding-top: 10px;
 
+    & h1 {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+  }
+  .card-icons i {
+    font-size: 1.3rem;
+  }
+}
+
+/* Tablet portrait */
+@media (min-width: 787px) and (max-width: 1024px) {
+  .hero-image {
+    height: 50vh;
+  }
+
+  .hero-text-wrapper {
+    padding-top: 20px;
     & h1 {
       font-weight: 700;
       font-size: 3rem;
