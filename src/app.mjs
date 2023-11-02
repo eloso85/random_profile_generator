@@ -24,7 +24,7 @@ async function renderData() {
                         <ul>
                             <li><a data-title="Hello, My Name is" data-value="${data.name.first} ${data.name.last}"><i class="fa-solid fa-user"></i></a></li>
                             <li><a data-title="My Email is" data-value="${data.email}"><i class="fa-solid fa-envelope"></i></a></li>
-                            <li><a data-title="My Birthday is" data-value="${new Date(data.dob.date).toDateString()}"><i class="fa-solid fa-calendar birthday"></i></a></li>
+                            <li><a data-title="My Birthday is on" data-value="${new Date(data.dob.date).toDateString()}"><i class="fa-solid fa-calendar birthday"></i></a></li>
                             <li><a data-title="My Address is" data-value="${data.location.street.number} ${data.location.street.name}"><i class="fa-solid fa-map-location-dot address"></i></a></li>
                             <li><a data-title="My Phone is" data-value="${data.cell}"><i class="fa-solid fa-phone phone"></i></a></li>
                         </ul>

@@ -96,6 +96,8 @@ select {
 }
 /* CSS Reset End */
 
+/* Navbar */
+
 .navbar {
   background-color: var(--background-color);
 
@@ -137,8 +139,37 @@ select {
   }
 }
 
+/* Main */
+.main {
+  padding: 75px 0px 50px 0px;
+
+  & .col-md-5 {
+    width: 37%;
+  }
+
+  & .mb-1 {
+    margin-bottom: -0.75rem !important;
+  }
+
+  & h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--primary-color);
+  }
+  & .main_h2_border {
+    width: 78%;
+    border: 2px solid var(--secondary-color);
+  }
+
+  & .lead {
+    padding-top: 25px;
+  }
+}
+
+/* Cards */
+
 #cards-wraper {
-  padding-top: 50px;
+  padding: 50px 0px 50px 0px;
 }
 
 .card-body {
@@ -186,6 +217,48 @@ select {
     }
   }
 }
+
+/* Footer */
+.footer {
+  height: 25vh;
+  background-color: var(--secondary-color);
+
+  & .container {
+    padding-top: 20px;
+  }
+  & .footer_logo {
+    font-size: 3rem;
+  }
+
+  & .footer_logo_sub_text {
+    font-weight: 700;
+    color: var(--text-color-w);
+  }
+
+  & .footer_sitemap_heading {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--primary-color);
+
+    & a {
+      text-decoration: none;
+      color: var(--text-color-w);
+
+      &:hover {
+        color: var(--background-color);
+      }
+    }
+  }
+  & .footer_contact_heading {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--primary-color);
+    & span {
+      color: var(--text-color-w);
+    }
+  }
+}
+
 /* mobile  */
 @media screen and (max-width: 786px) {
   .hero-image {
@@ -204,8 +277,25 @@ select {
       font-size: 1rem;
     }
   }
+
+  .main {
+    padding: 50px 0px 50px 0px;
+
+    & .col-md-5 {
+      width: 65%;
+    }
+  }
+
   .card-icons i {
     font-size: 1.3rem;
+  }
+
+  .footer {
+    height: 30vh;
+  }
+
+  .footer .col-6 {
+    padding-top: 20px;
   }
 }
 
