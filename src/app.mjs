@@ -1,4 +1,9 @@
 import fetchApiData from './modules/api.mjs';
+import toggleReadMore from './modules/modules.mjs';
+
+
+
+
 
 async function renderData() {
     const apiData = await fetchApiData();
@@ -57,3 +62,7 @@ async function renderData() {
 }
 
 renderData();
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('readMoreBtn').addEventListener('click', toggleReadMore);
+});

@@ -13,35 +13,38 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Pea-ple</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
+    <section id="nav_bar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Pea-ple</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
+
     <!-- Navigation End -->
 
     <!-- Hero Image -->
-    <section class="hero-image">
+    <section id="hero_image" class="hero-image">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -58,7 +61,7 @@
     <!-- Hero End -->
 
     <!-- Main Paragraph -->
-    <section class="main">
+    <section id="main_paragraph" class="main">
         <div class="container">
             <div class="row ">
                 <div class="clearfix">
@@ -77,26 +80,37 @@
                         At Pea-ple, we believe that your online presence should be a reflection of your unique
                         personality,
                         interests, and aspirations, which is why we've developed a revolutionary platform that allows
-                        users to create, customize, and share pods with ease.
+                        users to create, customize, and share pods with ease. <span id="lead__dots">...</span><span
+                            id="lead__more">With Pea-ple, you have the power to craft digital representations that truly
+                            capture who you
+                            are.Our user-friendly interface empowers you to curate your pod with photos, videos, text,
+                            and
+                            interactive elements, enabling you to tell your story in a way that's engaging and
+                            authentic.
+                            Whether you're an entrepreneur looking to network, an artist seeking to showcase your
+                            portfolio,
+                            or
+                            simply someone who wants to connect with like-minded individuals, Pea-ple provides a
+                            versatile
+                            platform to express yourself and forge meaningful connections.
 
-                        With Pea-ple, you have the power to craft digital representations that truly capture who you
-                        are.Our user-friendly interface empowers you to curate your pod with photos, videos, text, and
-                        interactive elements, enabling you to tell your story in a way that's engaging and authentic.
-                        Whether you're an entrepreneur looking to network, an artist seeking to showcase your portfolio,
-                        or
-                        simply someone who wants to connect with like-minded individuals, Pea-ple provides a versatile
-                        platform to express yourself and forge meaningful connections.
+                            Our commitment to privacy and security ensures that your pods are shared only with the
+                            people
+                            you
+                            choose, giving you full control over your online presence. Plus, our innovative features
+                            make it
+                            easy to connect, collaborate, and communicate with your peers, making Pea-ple the ultimate
+                            destination for both personal and professional networking.
 
-                        Our commitment to privacy and security ensures that your pods are shared only with the people
-                        you
-                        choose, giving you full control over your online presence. Plus, our innovative features make it
-                        easy to connect, collaborate, and communicate with your peers, making Pea-ple the ultimate
-                        destination for both personal and professional networking.
+                            Join us at Pea-ple and experience the future of digital interaction. Connect, share, and
+                            create
+                            meaningful relationships in a way that's uniquely you. Welcome to the world of pods, where
+                            your
+                            identity comes to life, and connections flourish.
+                        </span>
 
-                        Join us at Pea-ple and experience the future of digital interaction. Connect, share, and create
-                        meaningful relationships in a way that's uniquely you. Welcome to the world of pods, where your
-                        identity comes to life, and connections flourish.
                     </p>
+                    <button class="btn btn-primary" id="readMoreBtn" onclick="toggleReadMore()">Read More</button>
                 </div>
 
             </div>
@@ -107,13 +121,16 @@
     <!-- Main Paragraph End -->
 
     <!-- Pea-ple Card -->
-    <div id="cards-wraper">
-        <div class="container">
-            <div class="row" id="card-data">
-                <!-- api Data Entry -->
+    <section id="cards">
+        <div id="cards-wraper">
+            <div class="container">
+                <div class="row" id="card-data">
+                    <!-- api Data Entry -->
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
     <!-- Pea-ple Card End-->
 
     <!-- Footer -->
@@ -140,11 +157,11 @@
     </section>
     <!-- Footer End -->
 
-    <script type="module" src="../src/app.mjs"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
+    <script type="module" src="../src/app.mjs"></script>
 </body>
 
 </html>

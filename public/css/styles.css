@@ -156,9 +156,8 @@ select {
     font-size: 3rem;
     color: var(--primary-color);
   }
-  & .main_h2_border {
-    width: 78%;
-    border: 2px solid var(--secondary-color);
+  & p {
+    transition: height 0.5s ease;
   }
 
   & .lead {
@@ -284,6 +283,13 @@ select {
     & .col-md-5 {
       width: 65%;
     }
+
+    & #lead__more {
+      display: none;
+    }
+    & #readMoreBtn {
+      background-color: var(--btn-color);
+    }
   }
 
   .card-icons i {
@@ -314,6 +320,17 @@ select {
 
     & p {
       font-size: 1rem;
+    }
+  }
+}
+/* Desktop Only */
+@media screen and (min-width: 786px) {
+  .main {
+    & #lead__dots {
+      display: none;
+    }
+    & #readMoreBtn {
+      display: none;
     }
   }
 }
