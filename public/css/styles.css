@@ -217,6 +217,29 @@ select {
   }
 }
 
+/* info_section */
+
+#info_section {
+  background-color: var(--background-color);
+  color: #fff;
+  padding: 50px 0px 50px 0px;
+
+  & .fa-regular {
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+
+  & .col-12 {
+    padding-top: 20px;
+  }
+}
+
+.main_header {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
 /* Footer */
 .footer {
   height: 25vh;
