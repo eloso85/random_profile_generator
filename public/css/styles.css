@@ -240,6 +240,16 @@ select {
   color: var(--primary-color);
 }
 
+/* testimonials */
+
+#testimonials {
+  padding: 50px 0px 50px 0px;
+
+  & .testimonials_p_name {
+    font-weight: bold;
+  }
+}
+
 /* Footer */
 .footer {
   height: 25vh;
@@ -355,5 +365,13 @@ select {
     & #readMoreBtn {
       display: none;
     }
+  }
+
+  #testimonials {
+    margin: 50px 0px 50px 0px;
+  }
+
+  & img.img-thumbnail {
+    float: right;
   }
 }
