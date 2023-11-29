@@ -121,7 +121,7 @@ select {
     url("../images/office-hero-modified.jpeg");
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  /* margin: 100px 0; */
 }
 
 .hero-text-wrapper {
