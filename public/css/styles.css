@@ -124,6 +124,15 @@ select {
   /* margin: 100px 0; */
 }
 
+.about-hero-image {
+  height: 75vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/contact-us.png");
+  background-size: cover;
+  background-position: center;
+  /* margin: 100px 0; */
+}
+
 .hero-text-wrapper {
   padding-top: 110px;
 
@@ -250,6 +259,10 @@ select {
   }
 }
 
+#about {
+  margin: 50px 0px 70px 0px;
+}
+
 /* Footer */
 .footer {
   height: 25vh;
@@ -373,5 +386,10 @@ select {
 
   & img.img-thumbnail {
     float: right;
+  }
+
+  .image-wrap {
+    float: left;
+    margin-right: 20px;
   }
 }
